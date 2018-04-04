@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Mercer Chinese Database</title>
+  <meta charset="utf-8" />
+  <meta name=viewport" content="width=divice-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
+</head>
+
+<body>
+
+  <div class="main-header">
+    <h1>Mercer HSK Database</h1>
+  </div>
+
+  <table>
+    <tr>
+      <td>Character</td>
+      <td>Pinyin</td>
+      <td>Definition</td>
+      <td>Radical</td>
+      <td>Stroke Count</td>
+      <td>HSK Level</td>
+      <td>Frequency Rank</td>
+    </tr>
+    <?php
+      while($row=mysql_fetch_array($query)) {
+        echo "<tr>";
+        echo "<td>".$row[CharUnicode]."</td>";
+        echo "<td>".$row[Pinyin]."</td>";
+        echo "<td>".$row[Definition]."</td>";
+        echo "<td>".$row[Radical]."</td>";
+        echo "<td>".$row[StrokeCount]."</td>";
+        echo "<td>".$row[HSKLevel]."</td>";
+        echo "<td>".$row[FrequencyRank]."</td>";
+        echo "</tr>";
+      }
+    ?>
+  </table>
+
+  <div id="footer">
+    <p>Devleoped by Cody Lee, Jarrett Melnick, and Vincent</p>
+    <p>Develped under @MIT Copyright License</p>
+  </div>
+
+</body>
+
+</html>
