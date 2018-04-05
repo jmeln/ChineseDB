@@ -9,42 +9,130 @@
   <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
 </head>
 
-<body>
+<div id="container">
 
-  <div class="main-header">
-    <h1>Mercer HSK Database</h1>
+   <div id="header">
+      <h1>Mercer HSK Database</h1>
+    </div>
+
+  <div id="body">
+    <table id="data">
+      <tr>
+        <th>Character</th>
+        <th>Pinyin</th>
+        <th>Definition</th>
+        <th>Radical</th>
+        <th>Stroke Count</th>
+        <th>HSK Level</th>
+        <th>Frequency Rank</th>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+      <tr>
+        <td>Unicode</td>
+        <td>ASCII + Unicode</td>
+        <td>ASCII</td>
+        <td>???</td>
+        <td>INT</td>
+        <td>INT</td>
+        <td>INT</td>
+      </tr>
+    </table>
+
   </div>
-
-  <table>
-    <tr>
-      <td>Character</td>
-      <td>Pinyin</td>
-      <td>Definition</td>
-      <td>Radical</td>
-      <td>Stroke Count</td>
-      <td>HSK Level</td>
-      <td>Frequency Rank</td>
-    </tr>
-    <?php
-      while($row=mysql_fetch_array($query)) {
-        echo "<tr>";
-        echo "<td>".$row[CharUnicode]."</td>";
-        echo "<td>".$row[Pinyin]."</td>";
-        echo "<td>".$row[Definition]."</td>";
-        echo "<td>".$row[Radical]."</td>";
-        echo "<td>".$row[StrokeCount]."</td>";
-        echo "<td>".$row[HSKLevel]."</td>";
-        echo "<td>".$row[FrequencyRank]."</td>";
-        echo "</tr>";
-      }
-    ?>
-  </table>
 
   <div id="footer">
     <p>Devleoped by Cody Lee, Jarrett Melnick, and Vincent</p>
-    <p>Develped under @MIT Copyright License</p>
+    <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick. MIT</a>
   </div>
-
-</body>
+</div>
 
 </html>
