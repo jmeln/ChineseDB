@@ -17,10 +17,19 @@
 
   <div id="body">
     <table id="data">
-	<?php
-	    $mysqli = new mysqli("localhost", "userCHANGEME", "passCHANGEME", "dbCHANGEME");
-	    echo $mysqli->query("SELECT STATEMENT GOES HERE");
-	 ?>
+      <tr>
+        <th>Character</th>
+        <th>Pinyin</th>
+        <th>Definition</th>
+        <th>Radical</th>
+        <th>Stroke Count</th>
+        <th>HSK Level</th>
+        <th>Frequency Rank</th>
+      </tr>
+      <?php
+        $mysqli = new mysqli("localhost", "userCHANGEME", "passCHANGEME", "dbCHANGEME");
+        echo $mysqli->query("SELECT STATEMENT GOES HERE");
+      ?>
     </table>
 
   </div>
