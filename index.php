@@ -42,6 +42,9 @@
 			die("Connection failed: " . $mysqli->connect_error);
 		}
 		
+		//Sets the charset to utf8
+		mysqli_set_charset($mysqli,"utf8");
+		
 		//Runs the query
         $result = $mysqli->query("SELECT * FROM chineseterms ");
 		
