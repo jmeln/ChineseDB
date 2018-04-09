@@ -3,7 +3,7 @@
 
 <head>
   <title>Mercer Chinese Database</title>
-  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name=viewport" content="width=divice-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
@@ -27,6 +27,9 @@
         <th>Frequency Rank</th>
       </tr>
       <?php
+		//Defines the unicode type for chinese  character enabling
+		header('Content-Type: text/html; charset=utf-8');
+	  
 		//UserData, WIll change on a per database basis. Default MySQL user and password used
 		$username= "root";
 		$password = "";
@@ -45,7 +48,7 @@
 		//Prints the result of the query. [add HTML tags here START]
 		if ($result->num_rows > 0) {
 			while($row = $result->fetch_assoc()) {
-			echo "<tr><td>".$row["CHNcharacter"]."</td><td>".$row["Pinyin"]."</td><td>".$row["Definition"]."</td><td>".$row["Radical"]."</td><td>".$row["StrokeCount"]."</td><td>".$row["HSKlevel"]."</td><td>".$row["FrequencyRank"]."</td></tr>";
+			echo "<tr><td>".$row["CHNcharacter"]."</td><td>".$row["Pinyin"]."</td><td>".$row["Definition"]."</td><td>".$row["Radical"]."</td><td>".$row["StrokeCount"]."</td><td>".$row["HSKlevel"]."</td><td>";
 		}
 		echo "</table>";
 		//[add HTML tags here END]
@@ -62,8 +65,8 @@
   </div>
 
   <div id="footer">
-    <p>Devleoped by Cody Lee, Jarrett Melnick, and Vincent</p>
-    <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick. MIT</a>
+    <p>Devleoped by Cody Lee, Jarrett Melnick</p>
+    <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick & Cody Lee. MIT</a>
   </div>
 </div>
 
