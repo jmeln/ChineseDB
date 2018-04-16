@@ -39,12 +39,18 @@ body {
 	background: #608ebc;
 	text-align: center;
 	color: white;
+  font-weight: bold;
 }
 
 #loginContainer {
 	float: right;
   padding-top: 30px;
   padding-right: 20px;
+}
+
+#loginLabel {
+  font-size: 16;
+  margin-left: 10px;
 }
 
 #loginField {
@@ -78,15 +84,6 @@ body {
 
 .loginButton:hover {
   background-color: #d3d3d3;
-}
-
-#loginContainer: label {
-  padding-top: 9px;
-  padding-left: 15px;
-  padding-bottom: 9px;
-  padding-right: 6px;
-  font-size: 17px;
-  border: none;
 }
 
 #data {
