@@ -18,7 +18,7 @@ body {
 #header {
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
-	padding-left: 4%;
+	padding-left: 3%;
 	background: #608ebc;
 	color: white;
 	box-shadow: 1px 1px 16px 1px #888888;
@@ -41,9 +41,58 @@ body {
 	color: white;
 }
 
+#loginContainer {
+	float: right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+#loginField {
+  background-color: white;
+  color: #233445;
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+
+#loginField:hover {
+  background-color: #d3d3d3;
+}
+
+.loginButton {
+  border: none;
+  background-color: #e8e8e8;
+  color: #233445;
+  padding: 4px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #d3d3d3;
+}
+
+#loginContainer: label {
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-bottom: 9px;
+  padding-right: 6px;
+  font-size: 17px;
+  border: none;
+}
+
 #data {
 	border-collapse: collapse;
 	width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 #data td, #data th {
@@ -54,11 +103,53 @@ body {
 #data tr:hover {background-color: #ddd;}
 
 #data th {
+  cursor: pointer;
 	padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #608ebc;
   color: white;
+}
+
+#data th:hover {
+  background-color: #4f759a;
+}
+
+#search {
+  background-color: #e9e9e9;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-bottom: 9px;
+  padding-right: 6px;
+  font-size: 17px;
+  border: none;
+}
+
+#search:focus {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+#search:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    background-color: #608ebc; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  background-color: #4f759a;
 }
 
 h1 {
@@ -73,7 +164,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: hotpink;
+    color: #f7b1ab;
 }
 
 a:hover {
