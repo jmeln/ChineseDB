@@ -78,7 +78,6 @@
       $mysqli->close();
       ?>
     </table>
-    <div id=pageNavPosition></div>
 
   </div>
 
