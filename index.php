@@ -54,7 +54,6 @@
           <button>Placeholder</button>
         </div>
     </div>
-    
     <table id="data">
       <tr>
         <th onclick="sortTable(0)">Character</th>
