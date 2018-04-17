@@ -17,9 +17,9 @@
 
   <div id="header">
     <div id="loginContainer">
-      <form action="/php/login.php" method="post">
-        <label for="uname" id="loginLabel"><b>Username:</b></label>
-        <input type="text" id="loginField" placeholder="Enter Username" name="uname" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
+      <form action="php/login.php" method="post">
+        <label for="name" id="loginLabel"><b>Username:</b></label>
+        <input type="text" id="loginField" placeholder="Enter Username" name="name" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
 
         <label for="psw" id="loginLabel"><b>Password:</b></label>
         <input type="password" id="loginField" placeholder="Enter Password" name="psw" required onfocus="this.placeholder=''" onblur="this.placeholder='EnterPassword'"">
@@ -32,8 +32,8 @@
 
   <div id="body">
     <div class="dropdown">
-      <button onclick="toggleDropdown()" class="dropbtn">Element</button>
-        <div id="dropdownMenu" class="dropdown-content">
+      <button onclick="toggleDropdown(1)" class="dropbtn">Element</button>
+        <div id="dropdownMenu" class="dropdown-content1">
           <button>Character</button>
           <button>Pinyin</button>
           <button>Definition</button>
@@ -42,15 +42,15 @@
           <button>HSK Level</button>
           <button>Frequency Rank</button>
         </div>
-      <button onclick="toggleDropdown()" class="dropbtn">Operator</button>
-        <div id="dropdownMenu" class="dropdown-content">
+      <button onclick="toggleDropdown(2)" class="dropbtn">Operator</button>
+        <div id="dropdownMenu" class="dropdown-content2">
           <button>></button>
           <button>=</button>
           <button><</button>
           <button>!=</button>
         </div>
-      <button onclick="toggleDropdown()" class="dropbtn">Condition</button>
-        <div id="dropdownMenu" class="dropdown-content">
+      <button onclick="toggleDropdown(3)" class="dropbtn">Condition</button>
+        <div id="dropdownMenu" class="dropdown-content3">
           <button>Placeholder</button>
         </div>
     </div>

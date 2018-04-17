@@ -18,7 +18,7 @@
   <div id="header">
     <div id="loginContainer">
       <!-- PHP CODE TO PULL THE CURRENT USER SESSION INFORMATION FROM USER TABLE -->
-      <p>$USERNAME $USERSESSION</p>
+      <p><?php echo $_POST["name"]?></p>
     </div>
     <h1>Mercer HSK Database</h1>
   </div>
