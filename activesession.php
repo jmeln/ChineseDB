@@ -17,15 +17,8 @@
 
   <div id="header">
     <div id="loginContainer">
-      <form action="/php/login.php" method="post">
-        <label for="uname" id="loginLabel"><b>Username:</b></label>
-        <input type="text" id="loginField" placeholder="Enter Username" name="uname" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
-
-        <label for="psw" id="loginLabel"><b>Password:</b></label>
-        <input type="password" id="loginField" placeholder="Enter Password" name="psw" required onfocus="this.placeholder=''" onblur="this.placeholder='EnterPassword'"">
-
-        <button class="loginButton" value="submit">Login</button>
-      </form>
+      <!-- PHP CODE TO PULL THE CURRENT USER SESSION INFORMATION FROM USER TABLE -->
+      <p>$USERNAME $USERSESSION</p>
     </div>
     <h1>Mercer HSK Database</h1>
   </div>
