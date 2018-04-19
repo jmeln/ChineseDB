@@ -36,7 +36,7 @@
       </div>
       <div id="footer">
         <p>Devleoped by Cody Lee, Jarrett Melnick</p>
-        <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick & Cody Lee. MIT</a>
+        <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Cody Lee. MIT</a>
       </div>
     </div>
   </html>
