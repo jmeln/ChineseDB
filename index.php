@@ -9,8 +9,8 @@
   <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
 
   <!-- JAVASCRIPT HERE -->
-  <script type="text/javascript" src="assets/scripts/sort.js"></script>
-  <script type="text/javascript" src="assets/scripts/displayDropdown.js"></script>
+  <script type="text/javascript" src="scripts/sorttable.js"></script>
+  <script type="text/javascript" src="scripts/search.js"></script>
 </head>
 
 <div id="container">
@@ -18,7 +18,7 @@
   <div id="header">
     <div id="loginContainer">
       <form action="php/login.php" method="post">
-        <label for="name" id="loginLabel"><b>Username:</b></label>
+        <label for="uname" id="loginLabel"><b>Username:</b></label>
         <input type="text" id="loginField" placeholder="Enter Username" name="name" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
 
         <label for="psw" id="loginLabel"><b>Password:</b></label>
@@ -31,30 +31,8 @@
   </div>
 
   <div id="body">
-    <div class="dropdown">
-      <button onclick="toggleDropdown(1)" class="dropbtn">Element</button>
-        <div id="dropdownMenu" class="dropdown-content1">
-          <button>Character</button>
-          <button>Pinyin</button>
-          <button>Definition</button>
-          <button>Radical</button>
-          <button>Stroke Count</button>
-          <button>HSK Level</button>
-          <button>Frequency Rank</button>
-        </div>
-      <button onclick="toggleDropdown(2)" class="dropbtn">Operator</button>
-        <div id="dropdownMenu" class="dropdown-content2">
-          <button>></button>
-          <button>=</button>
-          <button><</button>
-          <button>!=</button>
-        </div>
-      <button onclick="toggleDropdown(3)" class="dropbtn">Condition</button>
-        <div id="dropdownMenu" class="dropdown-content3">
-          <button>Placeholder</button>
-        </div>
-    </div>
-    <table id="data">
+	<input id="searchbar" type="search" class="light-table-filter" data-table="order-table" placeholder="search ..." onfocus="this.placeholder=''" onblur="this.placeholder='search ...'"">
+    <table id="data" class="sortable order-table table">
       <tr>
         <th onclick="sortTable(0)">Character</th>
         <th onclick="sortTable(1)">Pinyin</th>
@@ -89,7 +67,7 @@
       //Prints the result of the query. [add HTML tags here START]
       if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-          echo "<tr><td>".$row["CHNcharacter"]."</td><td>".$row["Pinyin"]."</td><td>".$row["Definition"]."</td><td>".$row["Radical"]."</td><td>".$row["StrokeCount"]."</td><td>".$row["HSKlevel"]."</td><td>";
+          echo "<tr><td>".$row["CHNcharacter"]."</td><td>".$row["Pinyin"]."</td><td>".$row["Definition"]."</td><td>".$row["Radical"]."</td><td>".$row["StrokeCount"]."</td><td>".$row["HSKlevel"]."</td><td>".$row["FrequencyRank"];
         }
         echo "</table>";
       //[add HTML tags here END]
