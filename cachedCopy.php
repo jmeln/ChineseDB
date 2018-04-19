@@ -47,7 +47,7 @@
   </div>
 
   <div id="footer">
-    <p>Devleoped by Cody Lee, Jarrett Melnick</p>
+    <p>Devleoped by <a href="assets/videos/chicken.mp4">Cody</a> Lee, Jarrett Melnick</p>
     <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick & Cody Lee. MIT</a>
   </div>
 </div>
