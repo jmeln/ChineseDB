@@ -25,20 +25,24 @@ if ($result->num_rows > 0) {
      }else{
         //Reloads the page if the passwod is wrong
       header("Location: ../index.php");
+	  //header("Location: ../assets/ErrorPages/error.html");
       exit;
      }
     }else{
       //Reloads the page if user is not found. 
       #TODO: Create a new user page if user is not found.
       header("Location: ../index.php");
+	  //header("Location: ../assets/ErrorPages/error.html");
       exit; 
+		//echo $row["Username"]."=".$_POST["name"];
+	//echo $row["Password"]."=".$_POST["psw"];
     } 
   }
 }else{
   //Prints if no users exist.
   //If this prints, make sure the server is not on fire. 
   echo "ERROR 505! SOMETHING WENT HORRIBLY WRONG!";
-  header("Location: ../error.html");
+  header("Location: ../assets/ErrorPages/error.html");
   exit;
 }
 $mysqli->close();

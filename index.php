@@ -84,7 +84,7 @@
   </div>
 
   <div id="footer">
-    <p>Devleoped by Cody Lee, Jarrett Melnick</p>
+    <p>Devleoped by Cody Lee, Jarrett Melnick, <mark>and Vincent Raymond</mark>  </p>
     <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Jarrett Melnick & Cody Lee. MIT</a>
   </div>
 </div>
