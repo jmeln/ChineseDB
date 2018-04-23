@@ -1,210 +1,27 @@
+/* universal styles */
+
 * {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 12;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 html,
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-
-#container {
-	min-height: 100%;
-	position: relative;
-}
-
-#header {
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
-	padding-left: 3%;
-	background: #608ebc;
-	color: white;
-	box-shadow: 1px 1px 16px 1px #888888;
-}
-
-#body {
-	padding: 10px;
-	padding-left: 15%;
-	padding-top: 3%;
-	padding-bottom: 90px;
-}
-
-#footer {
-	position: absolute;
-	bottom: 0px;
-	height: 90px;
-	width: 100%;
-	background: #608ebc;
-	text-align: center;
-	color: white;
-	margin-top: 5px;
-  font-weight: bold;
-}
-
-#loginContainer {
-	float: right;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-
-#loginLabel {
-  font-size: 16;
-  margin-left: 12px;
-}
-
-#loginField {
-  background-color: white;
-  color: #233445;
-  padding-top: 5px;
-  padding-left: 8px;
-  padding-bottom: 5px;
-  padding-right: 8px;
-  font-size: 12px;
-  font-weight: bold;
-  border: none;
-}
-
-#loginField:hover {
-  background-color: #d3d3d3;
-}
-
-.loginButton {
-  border: none;
-  background-color: #e8e8e8;
-  color: #233445;
-  padding: 4px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 6px;
-  cursor: pointer;
-}
-
-.loginButton:hover {
-  background-color: #d3d3d3;
-}
-
-#data {
-	border-collapse: collapse;
-	width: 80%;
-	margin-bottom: 22px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-}
-
-#data td, #data th {
-	border: 1px solid #ddd;
-	padding: 8px;
-}
-
-#data tr:hover {background-color: #ddd;}
-
-#data th {
-  cursor: pointer;
-	padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #608ebc;
-  color: white;
-}
-
-#data th:hover {
-  background-color: #4f759a;
-}
-
-#searchbar {
-	margin-bottom: 10px;
-	background-color: #e9e9e9;
-	padding-top: 9px;
-	padding-left: 15px;
-	padding-bottom: 9px;
-	padding-right: 20px;
-	font-size: 17px;
-	border: none;
-}
-
-#searchbar:focus {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
-}
-
-#searchbar:hover {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.19);
-}
-
-.button {
-    background-color: #608ebc; 
-    border: none;
-    color: white;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-}
-
-.button:hover {
-  background-color: #4f759a;
-}
-
-.dropbtn {
-  font-size: 14px;
-  background-color: #e8e8e8; /* Green background */
-  border: 2px solid white; /* Green border */
-  color: black; /* White text */
-   padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #d3d3d3;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.dropdown button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    overflow: auto;
-    border: 1px solid #ddd;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd}
-
-.show {display:block;}
 
 h1 {
-	font-size: 16;
-	font-style: bold;
+    font-size: 2.25em;
+    font-style: bold;
+}
+
+mark {
+    background-color: #608ebc;
+    color: white;
+    font-size: 10px;
 }
 
 a:link {
@@ -214,7 +31,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #f7b1ab;
+    color: white;
 }
 
 a:hover {
@@ -227,8 +44,197 @@ a:active {
     color: green;
 }
 
-mark {
-	background-color: #608ebc;
-	color: white;
-	font-size: 10px;
+#header {
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    padding-left: 2.25%;
+    background: #608ebc;
+    color: white;
+    box-shadow: 1px 1px 16px 1px #888888;
+}
+
+#body {
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    padding-bottom: 90px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    height: 90px;
+    width: 100%;
+    background: #608ebc;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#loginContainer {
+    float: right;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+#loginLabel {
+    font-size: 16;
+    margin-left: 12px;
+}
+
+#loginField {
+    background-color: white;
+    color: #233445;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+#loginField:hover {
+    background-color: #d3d3d3;
+}
+
+.loginButton {
+    border: none;
+    background-color: #e8e8e8;
+    color: #233445;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 6px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: #d3d3d3;
+}
+
+
+/*Specific to Main Page*/
+
+#indexContainer {
+    min-height: 100%;
+    position: relative;
+}
+
+#dataDiv {
+    align-self: center;
+    margin: auto;
+    padding-left: 3%;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+#data {
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#data td,
+#data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#data tr:hover {
+    background-color: #ddd;
+}
+
+#data th {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #608ebc;
+    color: white;
+}
+
+#data th:hover {
+    background-color: #4f759a;
+}
+
+#searchbar {
+    margin-bottom: 10px;
+    background-color: #e9e9e9;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    padding-right: 20px;
+    font-size: 17px;
+    border: none;
+}
+
+#searchbar:focus {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchbar:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    background-color: #608ebc;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    background-color: #4f759a;
+}
+
+#indexContainer h2 {
+    font-size: 1.5em;
+    font-style: bold;
+    text-align: center;
+    color: #454545;
+}
+
+/*Specific to Landing Page*/
+
+#landingContainer {
+    min-height: 100%;
+    position: relative;
+}
+
+#landingContainer ul {
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+#bigList a {
+    font-size: 64px;
+    line-height: 2.5em;
+    font-weight: bold;
+    color: #454545;
+    text-decoration: none;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    border: 3px solid #008CBA;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#bigList a:hover {
+    text-decoration: underline;
+    color: #608ebc;
 }

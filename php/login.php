@@ -24,14 +24,14 @@ if ($result->num_rows > 0) {
        exit;
      }else{
         //Reloads the page if the passwod is wrong
-      header("Location: ../index.php");
+      header("Location: ../main.php");
 	  //header("Location: ../assets/ErrorPages/error.html");
       exit;
      }
     }else{
       //Reloads the page if user is not found. 
       #TODO: Create a new user page if user is not found.
-      header("Location: ../index.php");
+      header("Location: ../main.php");
 	  //header("Location: ../assets/ErrorPages/error.html");
       exit; 
 		//echo $row["Username"]."=".$_POST["name"];

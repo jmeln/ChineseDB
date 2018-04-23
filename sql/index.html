@@ -1,0 +1,60 @@
+﻿<body>
+	<button type="button" onclick="toggle()">Toggle Translations</button>
+	<script>
+		function toggle()
+		{
+			var list = document.getElementsByClassName("translation");
+			for(let x=0;x<list.length;x++)
+			{
+				var hold = list[x];
+				if (hold.style.display === "none") 
+				{
+					hold.style.display = "block";
+				} 
+				else 
+				{
+					hold.style.display = "none";
+				}
+			}
+		}
+	</script>
+	<h1>第一课 我叫徐文长</h1>
+	<table>
+		<tr>
+			<td align="left">我叫徐文长。</td>
+			<td align="left" class="translation">My name is Xu WenChang.</td>
+		</tr>
+		<tr>
+			<td align="left">我是中国人。</td>
+			<td align="left" class="translation">I am from China.</td>
+		</tr>
+		<tr>
+			<td align="left">我会讲故事。</td>
+			<td align="left" class="translation">I am good at story-telling.</td>
+		</tr>
+		<tr>
+			<td align="left">我会讲花木兰的故事。</td>
+			<td align="left" class="translation">I can tell [you] stories about Hua MuLan.</td>
+		</tr>
+	</table>
+	
+	<h1>第二课这是花木兰</h1>
+	<table>
+		<tr>
+			<td align="left">这是花木兰。</td>
+			<td align="left" class="translation">This is Hua MuLan.</td>
+		</tr>
+		<tr>
+			<td align="left">木兰是一个女孩子。</td>
+			<td align="left" class="translation">MuLan is a girl.</td>
+		</tr>
+		<tr>
+			<td align="left">她今年十七岁。</td>
+			<td align="left" class="translation">She is (this year) seventeen years old..</td>
+		</tr>
+		<tr>
+			<td align="left">她会织布，她会写字，她也会武术。</td>
+			<td align="left" class="translation">She can weave cloth, she can write characters, [and] she also can do martial arts.</td>
+		</tr>
+	</table>
+</body>
