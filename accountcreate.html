@@ -1,0 +1,22 @@
+<html>
+<div id="loginContainer">
+	<form action="php/login.php" method="post">
+		<label for="uname" id="loginLabel"><b>Username:</b></label>
+		<input type="text" id="loginField" placeholder="Enter Username" name="name" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
+		<label for="psw" id="loginLabel"><b>Password:</b></label>
+		<input type="password" id="loginField" placeholder="Enter Password" name="psw" required onfocus="this.placeholder=''" onblur="this.placeholder='EnterPassword'"">
+		<button class="loginButton" value="submit">Login</button>
+	</form>
+</div>
+<div id="AccountCreationContainer">
+	<form action="php/accountCreate.php" method="post">
+		<label for="username" id="loginLabel"><b>Username:</b></label>
+		<input type="text" id="loginField" placeholder="Enter Username" name="name" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
+		<label for="psw" id="loginLabel"><b>Password:</b></label>
+		<input type="password" id="loginField" placeholder="Enter Password" name="psw" required onfocus="this.placeholder=''" onblur="this.placeholder='EnterPassword'"">
+		<label for="psw" id="loginLabel"><b>Re-Enter Password:</b></label>
+		<input type="Re-enter password" id="loginField" placeholder="Re-enter Password" name="psw2" required onfocus="this.placeholder=''" onblur="this.placeholder='Re-Enter Password'"">		 
+		<button class="loginButton" value="submit">Login</button>	
+	</form>
+</div>
+</html>
