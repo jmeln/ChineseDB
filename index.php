@@ -10,7 +10,7 @@
     <script type="text/javascript" src="scripts/sorttable.js"></script>
     <script type="text/javascript" src="scripts/search.js"></script>
   </head>
-  <div id="container">
+  <div id="indexContainer">
     <div id="header">
       <div id="loginContainer">
         <form action="php/login.php" method="post">

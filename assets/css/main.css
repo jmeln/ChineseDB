@@ -1,3 +1,5 @@
+/* universal styles */
+
 * {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -11,9 +13,35 @@ body {
     height: 100%;
 }
 
-#container {
-    min-height: 100%;
-    position: relative;
+h1 {
+    font-size: 2.25em;
+    font-style: bold;
+}
+
+mark {
+    background-color: #608ebc;
+    color: white;
+    font-size: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+a:active {
+    text-decoration: underline;
+    color: green;
 }
 
 #header {
@@ -87,6 +115,14 @@ body {
 
 .loginButton:hover {
     background-color: #d3d3d3;
+}
+
+
+/*Specific to Main Page*/
+
+#indexContainer {
+    min-height: 100%;
+    position: relative;
 }
 
 #dataDiv {
@@ -163,40 +199,42 @@ body {
     background-color: #4f759a;
 }
 
-h1 {
-    font-size: 2.25em;
-    font-style: bold;
-}
-
-h2 {
+#indexContainer h2 {
     font-size: 1.5em;
     font-style: bold;
     text-align: center;
     color: #454545;
 }
 
-a:link {
+/*Specific to Landing Page*/
+
+#landingContainer {
+    min-height: 100%;
+    position: relative;
+}
+
+#landingContainer ul {
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+#bigList a {
+    font-size: 64px;
+    line-height: 4em;
+    font-weight: bold;
+    color: #454545;
     text-decoration: none;
-    color: white;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right:16px;
+    border: 3px solid #008CBA;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
 }
 
-a:visited {
-    text-decoration: none;
-    color: #f7b1ab;
-}
 
-a:hover {
+#bigList a:hover {
     text-decoration: underline;
-    color: yellow;
-}
-
-a:active {
-    text-decoration: underline;
-    color: green;
-}
-
-mark {
-    background-color: #608ebc;
-    color: white;
-    font-size: 10px;
+    color: #608ebc;
 }

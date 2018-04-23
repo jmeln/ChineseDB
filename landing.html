@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Chinese Database</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name=viewport" content="width=divice-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
+  </head>
+  <div id="landingContainer">
+    <div id="header">
+      <div id="loginContainer">
+        <form action="php/login.php" method="post">
+          <label for="uname" id="loginLabel"><b>Username:</b></label>
+          <input type="text" id="loginField" placeholder="Enter Username" name="name" required onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'">
+          <label for="psw" id="loginLabel"><b>Password:</b></label>
+          <input type="password" id="loginField" placeholder="Enter Password" name="psw" required onfocus="this.placeholder=''" onblur="this.placeholder='EnterPassword'"">
+          <button class="loginButton" value="submit">Login</button>
+        </form>
+      </div>
+      <h1>HSK Database</h1>
+    </div>
+    <div id="body">
+      
+      <div id="bigList">
+        <ul>
+          <li><a href="index.php">Access the Database</a></li>
+          <li><a href="accountcreate.html">Register for an Account</a></li>
+          <li><a href="books.html">Read More</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Devleoped by <a href="assets/videos/chicken.mp4">Cody</a> Lee & Jarrett Melnick</p>
+      <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Cody Lee. MIT</a>
+    </div>
+  </div>
+</html>
