@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html>
+  <?php
+    session_start();
+  ?>
   <head>
     <title>Chinese Database</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,7 +15,7 @@
     <div id="header">
       <div id="loginContainer">
         <!-- PHP CODE TO PULL THE CURRENT USER SESSION INFORMATION FROM USER TABLE -->
-        <p><?php echo "Welcome, " . "Admin" . "!"?></p>
+        <p><?php echo "Welcome, " . $_SESSION["username"] . "!"?></p>
       </div>
       <h1>HSK Database</h1>
     </div>

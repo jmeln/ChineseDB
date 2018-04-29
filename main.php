@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html>
+  <?php
+    session_start();
+  ?>
   <head>
     <title>Chinese Database</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

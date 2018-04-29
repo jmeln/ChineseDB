@@ -3,6 +3,7 @@
 
 //Establishes connection to the database.
 header('Content-Type: text/html; charset=utf-8');
+session_start();
 $username= "root";
 $password = "";
 $mysqli = new mysqli("localhost", $username, $password, "group6");
@@ -19,23 +20,19 @@ if ($result->num_rows > 0) {
       //Checks if the username is found.
       if($row["Password"] == $_POST["psw"]){
         //If the password provided matches the database password, go to new webpage and exit. 
-        #TODO: Change to webpage clone.SDS
+        $_SESSION["username"] = $_POST["name"];
        header("Location: ../activesession.php");
        exit;
      }else{
         //Reloads the page if the passwod is wrong
       header("Location: ../main.php");
-	  //header("Location: ../assets/ErrorPages/error.html");
       exit;
      }
     }else{
       //Reloads the page if user is not found. 
       #TODO: Create a new user page if user is not found.
       header("Location: ../main.php");
-	  //header("Location: ../assets/ErrorPages/error.html");
       exit; 
-		//echo $row["Username"]."=".$_POST["name"];
-	//echo $row["Password"]."=".$_POST["psw"];
     } 
   }
 }else{
