@@ -260,3 +260,9 @@ h3 {
   color: #5c5c5c;
   text-align: center;
 }
+
+h4 {
+  padding-left: 24px;
+  font-weight: normal;
+  color: #5c5c5c;
+}
