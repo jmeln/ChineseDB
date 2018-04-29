@@ -8,6 +8,7 @@
 
 html,
 body {
+    font-size: 16px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -16,12 +17,6 @@ body {
 h1 {
     font-size: 2.25em;
     font-style: bold;
-}
-
-mark {
-    background-color: #608ebc;
-    color: white;
-    font-size: 10px;
 }
 
 a:link {
@@ -128,7 +123,7 @@ a:active {
 #dataDiv {
     align-self: center;
     margin: auto;
-    padding-left: 3%;
+    padding-left: 2%;
     width: 90%;
     margin-bottom: 2%;
 }
@@ -168,7 +163,6 @@ a:active {
     padding-left: 15px;
     padding-bottom: 9px;
     padding-right: 20px;
-    font-size: 17px;
     border: none;
 }
 
@@ -188,7 +182,7 @@ a:active {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.8em;
     margin: 4px 2px;
     cursor: pointer;
 
@@ -220,7 +214,7 @@ a:active {
 }
 
 #bigList a {
-    font-size: 64px;
+    font-size: 3em;
     line-height: 4em;
     font-weight: bold;
     color: #454545;
@@ -246,7 +240,7 @@ a:active {
     padding-left: 8px;
     padding-bottom: 5px;
     padding-right: 8px;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: bold;
     border: none;
 }
@@ -262,7 +256,7 @@ h3 {
 }
 
 h4 {
-  padding-left: 24px;
   font-weight: normal;
   color: #5c5c5c;
+  text-align: center;
 }
