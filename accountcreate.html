@@ -10,32 +10,29 @@
     <div id="header">
       <h1>HSK Database</h1>
     </div>
-    <div id="body">
-      <h3>Login</h3>
-      <form action="php/login.php" method="post">
-        <label for="uname" id="loginLabel"><b>Username:</b></label>
-        <input type="text" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Username" name="name" required onfocus="placeholder=''" onblur="placeholder='Enter Username'">
-        <label for="psw" id="loginLabel"><b>Password:</b></label>
-        <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Password" name="psw" required onfocus="placeholder=''" onblur="placeholder='EnterPassword'"">
-        <button class="loginButton" value="submit">Login</button>
-      </form>
-
-      <h3>Register</h3>
-      <form action="php/accountCreate.php" method="post">
-        <label for="username" id="loginLabel"><b>Username:</b></label>
-        <input type="text" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Username" name="name" required onfocus="placeholder=''" onblur="placeholder='Enter Username'">
-        <label for="psw" id="loginLabel"><b>Password:</b></label>
-        <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Password" name="psw" required onfocus="placeholder=''" onblur="placeholder='Enter Password'"">
-        <label for="psw" id="loginLabel"><b>Re-Enter Password:</b></label>
-        <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Re-enter Password" name="psw2" required onfocus="placeholder=''" onblur="placeholder='Re-Enter Password'"">
-        <button class="loginButton" value="submit">Register</button>
-      </form>
-      <h4>usernames and passwords must be at least 4 characters, and at most 18 characters.</h4>
-
-    </div>
-
-  <div id="footer">
-      <p>Devleoped by <a href="assets/videos/chicken.mp4">Cody</a> Lee & Jarrett Melnick</p>
-      <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Cody Lee. MIT</a>
-  </div>
-</html>
+      <div id="body">
+        <h3>Login</h3>
+        <form action="php/login.php" method="post">
+          <label for="uname" id="loginLabel"><b>Username:</b></label>
+          <input type="text" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Username" name="name" required onfocus="placeholder=''" onblur="placeholder='Enter Username'">
+          <label for="psw" id="loginLabel"><b>Password:</b></label>
+          <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Password" name="psw" required onfocus="placeholder=''" onblur="placeholder='EnterPassword'"">
+          <button class="loginButton" value="submit">Login</button>
+        </form>
+        <h3>Register</h3>
+        <form action="php/accountCreate.php" method="post">
+          <label for="username" id="loginLabel"><b>Username:</b></label>
+          <input type="text" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Username" name="name" required onfocus="placeholder=''" onblur="placeholder='Enter Username'">
+          <label for="psw" id="loginLabel"><b>Password:</b></label>
+          <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Enter Password" name="psw" required onfocus="placeholder=''" onblur="placeholder='Enter Password'"">
+          <label for="psw" id="loginLabel"><b>Re-Enter Password:</b></label>
+          <input type="password" pattern="[0-9a-fA-F]{4,18}" id="registerField" placeholder="Re-enter Password" name="psw2" required onfocus="placeholder=''" onblur="placeholder='Re-Enter Password'"">
+          <button class="loginButton" value="submit">Register</button>
+        </form>
+        <h4>usernames and passwords must be at least 4 characters, and at most 18 characters.</h4>
+      </div>
+      <div id="footer">
+        <p>Devleoped by <a href="assets/videos/chicken.mp4">Cody</a> Lee & Jarrett Melnick</p>
+        <a href="https://opensource.org/licenses/MIT">© Copyright 2018 Cody Lee. MIT</a>
+      </div>
+    </html>
